@@ -6,7 +6,7 @@ Provide a short description explaining the what, why, and how of your project. U
 - What was your motivation? The motivation is to display the user's city and five day forecast.
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.") The goal of this project is to display the weather for next five days.
 - What problem does it solve? The problem this project solves is show the weather in five days.
-- What did you learn? I learned how to use bootstrap, html and css 
+- What did you learn? I learned how to use bootstrap, html and css together to create this project.
 
 ## Table of Contents (Optional)
 
@@ -19,7 +19,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To install, download repository from GitHub onto local device to run project.
 
 ## Usage
 
@@ -41,17 +41,13 @@ If you followed tutorials, include links to those here as well.
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+The license used in this project is the MIT license.
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+There are no badges at this time.
 
 ## Features
 
