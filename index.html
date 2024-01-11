@@ -1,93 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
+
 <body>
-    <h1>Weather Dashboard</h1>
-    <div class = "container">
-        <section id = "citySearch" class = "row flex-nowrap">Search for a City:
-            <div class = "col-2">
-                <form id="searchForm">
-                    <input id="searchInput" class="formInput" type="text" placeholder="Enter a City.">
-                    <button id = "searchButton">Search</button>
-                </form>
-                <section id = "previousSearches">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </section>  
-            </div>
-            <div class = "col-9">
-                <section id = "userCity">
-                    <h1 id = "cityName"></h1>
-                    <h3 id="weatherConditions">
-                        <div class="card">
+    <h1 class ="text-center">Weather Dashboard</h1>
+    <section id="citySearch" class="row flex-nowrap">Search for a City:
+        <div class="col-2">
+            <form id="searchForm">
+                <input id="searchInput" class="formInput" type="text" placeholder="Enter a City.">
+                <button id="searchButton">Search</button>
+            </form>
+            <section id="previousSearches">
+                <p>local storage to come</p>
+            </section>
+        </div>
+        <div class="col-9">
+            <section id="userCity">
+                <h1 id="cityName" class = "day0Date"></h1>
+                <h3 id="weatherConditions">
+                    <div class="card-body">
+                        <div id="temp">
+                            <p></p>
+                        </div>
+                        <div id="wind">
+                            <p></p>
+                        </div>
+                        <div id="humidity">
+                            <p></p>
+                        </div>
+                    </div>
+                </h3>
+            </section>
+
+            <section id = "fiveDayForecast" class = "d-flex">
+                <p>5-Day Forecast:</p>
+                <div class = "d-flex flex-wrap col-lg col-md-12">
+                    <div class = "card col-12">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                             <div class="card-body">
-                                <div id ="temp">
-                                    <p></p>
-                                </div>
-                                <div id ="wind">
-                                    <p></p>
-                                </div>
-                                <div id="humidity">
-                                    <p></p>
-                                </div>
+                                <h5 class="cardDate1"></h5>
+                                <img class="icon">
+                                <p id="day1TemperatureTemp"></p>
+                                <p id="day1WindTemp"></p>
+                                <p id="day1HumidityTemp"></p>
                             </div>
-                          </div>
-                    </h3>        
-                    
-                    <section id = "fiveDayForecast" class= "row flex-nowrap">5-Day Forecast:
-                        <div class = "col-12 flex-column">
-                            <ul>
-                                </li>
-                            </ul>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div id = "day1">
-                                        <p id = "day1TemperatureTemp"></p>
-                                        <p id = "day1WindTemp"></p>
-                                        <p id = "day1HumidityTemp"></p>
-                                    </div>
-                                    <div id = "day2">
-                                        <p id = "day2TemperatureTemp"></p>
-                                        <p id = "day2WindTemp"></p>
-                                        <p id = "day2HumidityTemp"></p>
-                                    </div>
-                                    <div id = "day3" class ="d-flex flex-column">
-                                        <p id = "day3TemperatureTemp"></p>
-                                        <p id = "day3WindTemp"></p>
-                                        <p id = "day3HumidityTemp"></p>
-                                    </div>
-                                    <div id = "day4" class ="d-flex flex-column">
-                                        <p id = "day4TemperatureTemp"></p>
-                                        <p id = "day4WindTemp"></p>
-                                        <p id = "day4HumidityTemp"></p>
-                                    </div>
-                                    <div id = "day5" class ="d-flex flex-column">
-                                        <p id = "day5TemperatureTemp"></p>
-                                        <p id = "day5WindTemp"></p>
-                                        <p id = "day5HumidityTemp"></p>
-                                    </div>
-                                </div>
-                              </div>
+                        </div>
+        
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="cardDate2"></h5>
+                                <img class="icon">
+                                <p id="day2TemperatureTemp"></p>
+                                <p id="day2WindTemp"></p>
+                                <p id="day2HumidityTemp"></p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="cardDate3"></h5>
+                                <img class="icon">
+                                <p id="day3TemperatureTemp"></p>
+                                <p id="day3WindTemp"></p>
+                                <p id="day3HumidityTemp"></p>
+                            </div>
                         </div>
 
-                    </section>
-                </section>                 
-            </div>  
-        </section>
-    </div>
-   
-
-
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="cardDate4"></h5>
+                                <img class="icon">
+                                <p id="day4TemperatureTemp"></p>
+                                <p id="day4WindTemp"></p>
+                                <p id="day4HumidityTemp"></p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="cardDate5"></h5>
+                                <img class="icon">
+                                <p id="day5TemperatureTemp"></p>
+                                <p id="day5WindTemp"></p>
+                                <p id="day5HumidityTemp"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
     <script src="./assets/javascript/javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>

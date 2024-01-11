@@ -1,12 +1,13 @@
 # weatherAPI
+
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation? The motivation is to display the user's city and five day forecast.
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.") The goal of this project is to display the weather for next five days.
-- What problem does it solve? The problem this project solves is show the weather in five days.
-- What did you learn? I learned how to use bootstrap, html and css together to create this project.
+- The motivation is to display the user's city and five day forecast.
+- The goal of this project is to display the weather for next five days.
+- The problem this project solves is show the weather in five days.
+- I learned how to use bootstrap, html and css together to create this project.
 
 ## Table of Contents (Optional)
 
@@ -23,21 +24,15 @@ To install, download repository from GitHub onto local device to run project.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Please enter a city name, then the current weather will display along with a five day forecast.
 
     ```md
-    ![alt text](assets/images/screenshot.png)
+    ![alt text](./assets/images/ScreenshotWeatherAPI.png)
     ```
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+I would like to thank Leif for explaining the order of fetch and their functions. I want to also thank Charles for helping me with setting up bootstrap and their cards. I want to thank Miah for helping me setup better cards and adding the date to them.
 
 ## License
 
@@ -51,12 +46,12 @@ There are no badges at this time.
 
 ## Features
 
-If your project has a lot of features, list them here.
+The features of this project is to display the current weather once the user enters a city and then display the 5 day forecast after.
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+There are no contributions at this time.
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Don't enter a city. In the console, it will respond.
