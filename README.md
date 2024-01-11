@@ -25,10 +25,7 @@ To install, download repository from GitHub onto local device to run project.
 ## Usage
 
 Please enter a city name, then the current weather will display along with a five day forecast.
-
-    ```md
     ![alt text](./assets/images/ScreenshotWeatherAPI.png)
-    ```
 
 ## Credits
 
