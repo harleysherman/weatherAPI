@@ -2,6 +2,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+title {
+    font-weight: bold;
+    background-color: blue;
+}
+
+#citySearch {
+    font-weight: bold;
+}
+
 li {
     font-weight: normal;
+}
+
+#fiveDayForecast {
+    font-weight: bold;
 }
