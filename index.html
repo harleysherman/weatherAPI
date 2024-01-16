@@ -10,10 +10,11 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
-<body>
-    <h1 class ="text-center">Weather Dashboard</h1>
-    <section id="citySearch" class="row flex-nowrap">Search for a City:
-        <div class="col-2">
+<body class = "container">
+    <section id="citySearch" class="row">
+        <div class="col-lg-3 col-md-12">
+            <h1 class ="text-center">Weather Dashboard</h1>
+            <p>Search for a City:</p>
             <form id="searchForm">
                 <input id="searchInput" class="formInput" type="text" placeholder="Enter a City.">
                 <button id="searchButton">Search</button>
@@ -22,7 +23,7 @@
                 <p>local storage to come</p>
             </section>
         </div>
-        <div class="col-9">
+        <div class="col-lg-9 col-md-12">
             <section id="userCity">
                 <h1 id="cityName" class = "day0Date"></h1>
                 <h3 id="weatherConditions">
@@ -40,11 +41,10 @@
                 </h3>
             </section>
 
-            <section id = "fiveDayForecast" class = "d-flex">
+            <section id = "fiveDayForecast">
                 <p>5-Day Forecast:</p>
-                <div class = "d-flex flex-wrap col-lg col-md-12">
-                    <div class = "card col-12">
-                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                    <div class = "row">
+                        <div class="card text-white bg-primary mb-3 col-lg col-md-12 mx-1" style="max-width: 20rem;">
                             <div class="card-body">
                                 <h5 class="cardDate1"></h5>
                                 <img class="icon">
@@ -54,7 +54,7 @@
                             </div>
                         </div>
         
-                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card text-white bg-primary mb-3 col-lg col-md-12 mx-1" style="max-width: 20rem;">
                             <div class="card-body">
                                 <h5 class="cardDate2"></h5>
                                 <img class="icon">
@@ -63,7 +63,7 @@
                                 <p id="day2HumidityTemp"></p>
                             </div>
                         </div>
-                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card text-white bg-primary mb-3 col-lg col-md-12 mx-1" style="max-width: 20rem;">
                             <div class="card-body">
                                 <h5 class="cardDate3"></h5>
                                 <img class="icon">
@@ -73,7 +73,7 @@
                             </div>
                         </div>
 
-                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card text-white bg-primary mb-3 col-lg col-md-12 mx-1" style="max-width: 20rem;">
                             <div class="card-body">
                                 <h5 class="cardDate4"></h5>
                                 <img class="icon">
@@ -82,7 +82,7 @@
                                 <p id="day4HumidityTemp"></p>
                             </div>
                         </div>
-                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card text-white bg-primary mb-3 col-lg col-md-12 mx-1" style="max-width: 20rem;">
                             <div class="card-body">
                                 <h5 class="cardDate5"></h5>
                                 <img class="icon">
@@ -92,7 +92,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>  
         </div>
     </section>

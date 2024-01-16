@@ -25,8 +25,7 @@ To install, download repository from GitHub onto local device to run project.
 ## Usage
 
 Please enter a city name, then the current weather will display along with a five day forecast.
-    ![alt text](./assets/images/ScreenshotWeatherAPI.png)
-
+    ![alt text](./assets/images/ScreenshotWeatherAPI.pn
 ## Credits
 
 I would like to thank Leif for explaining the order of fetch and their functions. I want to also thank Charles for helping me with setting up bootstrap and their cards. I want to thank Miah for helping me setup better cards and adding the date to them.
